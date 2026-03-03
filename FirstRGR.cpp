@@ -19,7 +19,7 @@ struct Circle
 };
 
 vector<Circle> circles;
-int timerInterval = 100;
+int timerInterval = 400;
 int circleSegments = 32;
 float gravity = 0.05f;
 float minSpeed = 0.2f;
