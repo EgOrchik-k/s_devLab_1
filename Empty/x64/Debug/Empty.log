@@ -1,1 +1,7 @@
-﻿  Empty.vcxproj -> C:\Users\Swor\Desktop\NETI\Программирование\VSProjects\Empty\x64\Debug\Empty.exe
+﻿  FirstRGR.cpp
+C:\Users\Swor\Desktop\NETI\Программирование\VSProjects\Empty\FirstRGR.cpp(46,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\Swor\Desktop\NETI\Программирование\VSProjects\Empty\FirstRGR.cpp(55,42): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\Swor\Desktop\NETI\Программирование\VSProjects\Empty\FirstRGR.cpp(56,26): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+  SecondRGR.cpp
+  Создание кода...
+  Empty.vcxproj -> C:\Users\Swor\Desktop\NETI\Программирование\VSProjects\Empty\x64\Debug\Empty.exe
