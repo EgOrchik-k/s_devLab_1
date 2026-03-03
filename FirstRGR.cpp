@@ -5,7 +5,7 @@
 #include <glut.h>				// Заголовочник  GLUT
 #include <algorithm>
 using namespace std;
-GLint Width = 333, Height = 333;// Начальные размеры окна
+GLint Width = 555, Height = 555;// Начальные размеры окна
 int delay = 20;				    // Задержка в МС между последними IDLE
 long time0 = 0;					// Отметка системного времени
 
