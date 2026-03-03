@@ -5,11 +5,7 @@
 #include <glut.h>				// Заголовочник  GLUT
 #include <algorithm>
 using namespace std;
-<<<<<<< HEAD
-GLint Width = 553, Height = 555;// Начальные размеры окна
-=======
-GLint Width = 443, Height = 333;// Начальные размеры окна
->>>>>>> dev/egor
+GLint Width = 443, Height = 332;// Начальные размеры окна
 int delay = 20;				    // Задержка в МС между последними IDLE
 long time0 = 0;					// Отметка системного времени
 
