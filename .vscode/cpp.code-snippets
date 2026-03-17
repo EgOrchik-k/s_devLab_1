@@ -1,0 +1,14 @@
+{
+    "cout endl": {
+        "scope": "cpp",
+        "prefix": [
+            "cc",
+            "сс",
+            "cout"
+        ],
+        "body": [
+            "cout << $1 << endl;"
+        ],
+        "description": "cout with endl"
+    }
+}

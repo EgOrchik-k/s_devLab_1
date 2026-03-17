@@ -1,0 +1,13 @@
+CompileFlags:
+  Add:
+    - -Wall
+    - -Wextra
+    - -Wuninitialized
+
+Diagnostics:
+  ClangTidy:
+    Add:
+      - clang-diagnostic-*
+      - clang-analyzer-*
+      - bugprone-*
+      - performance-*

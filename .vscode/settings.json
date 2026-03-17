@@ -1,0 +1,38 @@
+{
+    "C_Cpp.default.compilerPath": "/usr/bin/clang",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "clangd.path": "/opt/homebrew/Cellar/llvm/22.1.1/bin/clangd",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}",
+        "--background-index",
+        "--clang-tidy",
+        "--completion-style=detailed",
+        "--header-insertion=iwyu"
+    ],
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    "debug.openDebug": "neverOpen",
+    "go.lintTool": "golangci-lint",
+    "go.lintOnSave": "package",
+    "go.toolsEnvVars": {
+        "GOCACHE": "${workspaceFolder}/go progects/.cache/go-build",
+        "GOLANGCI_LINT_CACHE": "${workspaceFolder}/go progects/.cache/golangci-lint"
+    },
+    "[cpp]": {
+        "editor.acceptSuggestionOnEnter": "on",
+        "editor.snippetSuggestions": "top",
+        "editor.suggest.showKeywords": false,
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.formatOnSave": true
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run active file (auto)",
+            "type": "shell",
+            "command": "/usr/bin/clang++ -std=gnu++14 -Wall -Wextra -Wuninitialized -fcolor-diagnostics -fansi-escape-codes -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true,
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "Analyze active file (clang-tidy)",
+            "type": "shell",
+            "command": "/opt/homebrew/Cellar/llvm/22.1.1/bin/clang-tidy \"${file}\" -- -std=gnu++14 -Wall -Wextra -Wuninitialized",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true,
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "Lint Go module",
+            "type": "shell",
+            "command": "mkdir -p '.cache/go-build' '.cache/golangci-lint' && GOCACHE=\"$PWD/.cache/go-build\" GOLANGCI_LINT_CACHE=\"$PWD/.cache/golangci-lint\" /opt/homebrew/bin/golangci-lint run",
+            "options": {
+                "cwd": "${workspaceFolder}/go progects"
+            },
+            "problemMatcher": [
+                "$go"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "clear": true,
+                "showReuseMessage": false
+            }
+        }
+    ]
+}

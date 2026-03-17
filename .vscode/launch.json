@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "C/C++: clang++ сборка и отладка активного файла",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "MIMode": "lldb",
+            "preLaunchTask": "Run active file (auto)"
+        }
+    ]
+}
