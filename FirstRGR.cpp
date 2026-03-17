@@ -9,7 +9,7 @@ GLint Width = 443, Height = 332;// Начальные размеры окна
 int delay = 20;				    // Задержка в МС между последними IDLE
 long time0 = 0;					// Отметка системного времени
 
-// dnfkngld
+// dbfkhg
 struct Circle
 {
     float x, y;
