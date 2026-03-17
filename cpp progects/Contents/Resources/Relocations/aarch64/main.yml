@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/egor/Projects/VSCode/Progect 3/main'
+relocations:     []
+...
